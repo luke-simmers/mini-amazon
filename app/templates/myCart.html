@@ -41,34 +41,22 @@
 
     {% if savings > 0 %}
     <h4> You are saving {{savings}}$</h4>
-    
-    <p>Switch discount codes?</p>
-    {% else %}
-    <p>Have a discount code?</p>
+
     {% endif %}
-    <form action="" method="post">
-      {{ dform.hidden_tag() }}
-      {{ dform.code(size=32) }}<br/>
-      {{ dform.submit(class_="btn btn-black") }}
-    </form>
-    {% if hasEnough == False%}
-    <h4>You Have insufficient funds! Click here to <a href="{{ url_for('updatebalance.updateBalancePage') }}">add funds</a>!</h4>
-    {% else %}
-    <br>
 
 
     <form action="" method="post">
       {{ form.hidden_tag() }}
       <p>
-        {{ form.confirm.label }}<br/>
         {{ form.confirm(size=2) }}<br/>
         {{ form.address.label }}<br/>
         {{ form.address(size=32) }}<br/>
+        {{ form.code.label }}<br/>
+        {{ form.code(size=32) }}<br/>
       </p>
       {{ form.submit(class_="btn btn-black") }}
     </form>
     {% endif %}
-{% endif %}
 
 
 
