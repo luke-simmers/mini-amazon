@@ -6,6 +6,7 @@ Implemented all basic requirements pertaining to carts, including buyer side ord
 Carts are now fully functional.
 Matt Jogodnik - Users Guru
 Steven Li - Products Guru
+Cleaned up implementation of basic requirements related to Products (ex. bugs and other things that weren't exactly the same as the requirements) and added additional features to the products pages such as advanced filtering.
 Luke Simmers - Social Guru
 Matthew Traum - Sellers Guru
 
