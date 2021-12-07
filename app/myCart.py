@@ -61,21 +61,6 @@ def myCart():
                             any_saved = any_saved,
                             savings = 0,
                             )
-        """
-        if dform.validate_on_submit and good_code(dform.code.data):
-            DiscountCode = dform.code.data
-            usersCode.dCode = dform.code.data
-            redirect(url_for('Cart.myCart', dcode = dform.code.data))
-        elif good_code(dform.code.data):
-             DiscountCode = dform.code.data
-        else:
-            DiscountCode = "No Code"
-            usersCode.dCode = "No Code"
-        """
-        #products = []
-        #for item in ido:
-        #    products.append([0, item.pid, item.quantity, item.price])
-        #SELECT Users.firstname, Products.pid, CARTS.quantity, Products.price
         products = ido
         savings = 0
         for product in ido:
